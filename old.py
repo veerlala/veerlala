@@ -695,7 +695,7 @@ class Main:
 
 			if "session_key" in response.text and "EAAA" in response.text:
 
-				print("\r  \033[0;94m   [Veer_LaLa-OK=>] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;92m   [Veer_LaLa-OK=>] %s | %s\033[0;97m         "%(uid, pw))
 
 				self.ok.append("%s|%s"%(uid, pw))
 
@@ -705,7 +705,7 @@ class Main:
 
 			elif "www.facebook.com" in response.json()["error_msg"]:
 
-				print("\r  \033[0;94m   [Veer_LaLa-CP=>] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;92m   [Veer_LaLa-CP=>] %s | %s\033[0;97m         "%(uid, pw))
 
 				self.cp.append("%s|%s"%(uid, pw))
 
